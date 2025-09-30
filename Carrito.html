@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+     <link rel="Stylesheet" href="carrito.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+<nav class="nav-container">
+    <a href="Flantastico.html"><img src="logo.png" class="logo"></a>
+    <div class="nav-links">
+        <a href="MENUF.html">MENÚ</a>
+        <a href="PROMOCIONES.html">PROMOCIONES</a>
+        <a href="CONOCENOS.html">CONÓCENOS</a>
+    </div>
+        <div class="icons">
+        <img src="busqueda.png">
+        <a href="Carrito.html"><img src="Carrito.png""></a>
+    </div>
+    </nav>   
+</header>
+<br>
+<table id="tabla-carrito">
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Precio Unitario</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<br>
+<br>
+<br>
+<p class="total">Total: Q.<span id="total"></span></p>
+
+<h2>Factura</h2>
+<pre id="factura"></pre>
+
+<br>
+<br>
+<button onclick="vaciarCarrito()">Vaciar carrito</button>
+
+<script src="carrito.js"></script>
+
+</body>
+</html>
+</body>
+</html>

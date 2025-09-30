@@ -1,0 +1,344 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Fredoka", sans-serif;
+      align-items: center;
+    }
+  
+.header {
+    font-family: "Fredoka", sans-serif;
+    background-color: #006633;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-evenly;
+        }
+
+.nav-container {
+    background-color: #006633;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+      }
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+    }
+
+.nav-links a {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600; /* Semi-negrita */
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Amarillo Krispy Kreme */
+}
+
+.icons img {
+    height: 30px;
+    margin-left: 15px;
+        }
+
+/* Categorías */
+.categorias-menu {
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;          
+    justify-content: space-around; 
+    gap: 20px;             
+    padding: 20px;
+}
+
+.categoria a {
+    box-shadow: 25px 10px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #006442;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    width: 160px;   /* Tamaño fijo */
+    height: 160px;  /* Tamaño fijo */
+    transition: transform 0.3s ease, background-color 0.3s ease;   
+}
+
+.categoria a img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.categoria a p {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+.categoria a:hover {
+    background-color: #024f35; 
+    color: #ffcc00; 
+    transform: translateY(-5px); 
+}
+
+.FRESHDAILY {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categoria.activa {
+    text-decoration: none;
+    outline: 3px solid #ffcc00;
+    transform: scale(1.05);
+}
+
+.categorias-menu a {
+    text-decoration: none; 
+    color: inherit;        
+}
+
+.categorias-menu a p {
+    margin: 5px 0 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*CARRITO DE COMPRAS*/
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    height: 300px; 
+    width: 100%; 
+}
+
+.producto img {
+    max-width: 100%;
+    max-height: 150px; 
+    object-fit: contain; 
+}
+
+.producto h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 5px 0;
+    flex-grow: 0;
+}
+
+.producto p {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.producto button {
+    background-color: #c8102e;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.producto button:hover {
+    background-color: #a30d23;
+}
+
+.producto-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto; 
+}
+
+
+.producto-actions input[type="number"] {
+    width: 125px;
+    height: 40px;
+    text-align: center;
+    font-size: 1rem;
+    border: 2px solid #006b3f; 
+    border-radius: 25px;
+    color: #006b3f;
+    font-weight: bold;
+}
+
+
+.producto-actions input[type="number"]::-webkit-inner-spin-button,
+.producto-actions input[type="number"]::-webkit-outer-spin-button {
+    appearance: auto;
+    margin: 0;
+}
+
+/* Botón de carrito ROJO */
+.carrito-btn {
+    background-color: #c8102e; 
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.carrito-btn:hover {
+    background-color: #a30d23;
+}
+
+.carrito-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+/*BOTON PARA IR AL CARRITO*/
+.boton-carrito {
+    box-shadow: 25px 10px 15px rgba(0,0,0,0.1);
+    background-color: #006442;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none; 
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-carrito:hover {
+    background-color: #ffcc00;
+    color: #006442; 
+    transform: translateY(-3px); 
+}
+
+/*PIE DE PAGINA*/
+.footer-kk {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #006b3f;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 2px solid white;
+}
+
+.footer-kk .footer-logo {
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.footer-kk .stay-tuned {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer-kk .stay-tuned span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.footer-kk .social-icons img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+.footer-links {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    margin-top: 15px;
+    color: #eee;
+}
+
+.menucompleto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.button {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #006442; 
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffcc00; 
+    color: #006442;
+}
+
+.carrito-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #006442;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.carrito-bar button {
+    background-color: #ffcc00;
+    color: #006442;
+    border: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carrito-bar button:hover {
+    background-color: #e6b800;
+}

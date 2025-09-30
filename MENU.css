@@ -1,0 +1,176 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Fredoka", sans-serif;
+      align-items: center;
+    }
+
+
+    
+.header {
+    font-family: "Fredoka", sans-serif;
+    background-color: #ffd7ba;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-evenly;
+        }
+
+.nav-container {
+    background-color: #ffd7ba;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    padding: 10px 70px;
+    justify-content: space-between;
+      }
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+    }
+
+.nav-links a {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600; /* Semi-negrita */
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d8e2dc 
+}
+
+.icons img {
+    height: 40px;
+    margin-left: 15px;
+        }
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 4 columnas */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    height: 300px; 
+    width: 100%; 
+}
+
+.producto img {
+    max-width: 100%;
+    max-height: 150px; 
+    object-fit: contain; 
+}
+
+.producto h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 5px 0;
+    flex-grow: 0;
+}
+
+.producto p {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.producto button {
+    background-color: #d8e2dc;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.producto button:hover {
+    background-color: #e8e8e4;
+}
+
+.producto-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto; 
+}
+
+
+.producto-actions input[type="number"] {
+    width: 125px;
+    height: 40px;
+    text-align: center;
+    font-size: 1rem;
+    border: 2px solid #e8e8e4; 
+    border-radius: 25px;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.producto-actions input[type="number"]::-webkit-inner-spin-button,
+.producto-actions input[type="number"]::-webkit-outer-spin-button {
+    appearance: auto;
+margin: 0;
+}
+
+/*PIE DE PAGINA*/
+.footer-kk {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffd7ba;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 2px solid fae1dd(0, 0, 0);
+}
+
+.footer-kk .footer-logo {
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.footer-kk .stay-tuned {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer-kk .stay-tuned span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.footer-kk .social-icons img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+.footer-links {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    margin-top: 15px;
+    color: #000000;
+}
